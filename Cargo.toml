@@ -5,6 +5,7 @@ members = [
     "block-padding",
     "collectable",
     "cmov",
+    "cpubits",
     "cpufeatures",
     "dbl",
     "fiat-constify",
