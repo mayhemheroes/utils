@@ -25,3 +25,7 @@ COPY --from=builder /utils/fuzz/target/x86_64-unknown-linux-gnu/release/pad_iso1
 COPY --from=builder /utils/fuzz/target/x86_64-unknown-linux-gnu/release/pad_ansix923 /
 
 COPY --from=builder /utils/fuzz/target/x86_64-unknown-linux-gnu/release/pad_pkcs7 /
+
+COPY --from=builder /utils/fuzz/target/x86_64-unknown-linux-gnu/release/pad_zeros /
+
+COPY --from=builder /utils/fuzz/target/x86_64-unknown-linux-gnu/release/pad_no_padding /

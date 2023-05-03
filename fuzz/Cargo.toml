@@ -41,3 +41,15 @@ name = "pad_pkcs7"
 path = "fuzz_targets/pad_pkcs7.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "pad_zeros"
+path = "fuzz_targets/pad_zeros.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "pad_no_padding"
+path = "fuzz_targets/pad_no_padding.rs"
+test = false
+doc = false

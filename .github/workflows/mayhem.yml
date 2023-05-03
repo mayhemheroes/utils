@@ -58,6 +58,8 @@ jobs:
         - fuzz/mayhemfiles/Mayhemfile_pad_iso10126
         - fuzz/mayhemfiles/Mayhemfile_pad_ansix923
         - fuzz/mayhemfiles/Mayhemfile_pad_pkcs7
+        - fuzz/mayhemfiles/Mayhemfile_pad_zeros
+        - fuzz/mayhemfiles/Mayhemfile_pad_no_padding
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
