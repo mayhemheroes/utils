@@ -41,7 +41,7 @@ jobs:
       with:
         context: .
         push: true
-        file: fuzz/Dockerfile
+        file: mayhem/Dockerfile
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
     outputs:
@@ -54,12 +54,12 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-        - fuzz/mayhemfiles/pad_iso7816.mayhemfile
-        - fuzz/mayhemfiles/pad_iso10126.mayhemfile
-        - fuzz/mayhemfiles/pad_ansix923.mayhemfile
-        - fuzz/mayhemfiles/pad_pkcs7.mayhemfile
-        - fuzz/mayhemfiles/pad_zeros.mayhemfile
-        - fuzz/mayhemfiles/pad_no_padding.mayhemfile
+        - mayhem/mayhemfiles/pad_iso7816.mayhemfile
+        - mayhem/mayhemfiles/pad_iso10126.mayhemfile
+        - mayhem/mayhemfiles/pad_ansix923.mayhemfile
+        - mayhem/mayhemfiles/pad_pkcs7.mayhemfile
+        - mayhem/mayhemfiles/pad_zeros.mayhemfile
+        - mayhem/mayhemfiles/pad_no_padding.mayhemfile
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
