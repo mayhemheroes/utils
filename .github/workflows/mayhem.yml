@@ -54,12 +54,12 @@ jobs:
       fail-fast: false
       matrix:
         mayhemfile:
-        - fuzz/mayhemfiles/Mayhemfile_pad_iso7816
-        - fuzz/mayhemfiles/Mayhemfile_pad_iso10126
-        - fuzz/mayhemfiles/Mayhemfile_pad_ansix923
-        - fuzz/mayhemfiles/Mayhemfile_pad_pkcs7
-        - fuzz/mayhemfiles/Mayhemfile_pad_zeros
-        - fuzz/mayhemfiles/Mayhemfile_pad_no_padding
+        - fuzz/mayhemfiles/pad_iso7816.mayhemfile
+        - fuzz/mayhemfiles/pad_iso10126.mayhemfile
+        - fuzz/mayhemfiles/pad_ansix923.mayhemfile
+        - fuzz/mayhemfiles/pad_pkcs7.mayhemfile
+        - fuzz/mayhemfiles/pad_zeros.mayhemfile
+        - fuzz/mayhemfiles/pad_no_padding.mayhemfile
     steps:
     - uses: actions/checkout@v3
     - name: Start analysis for ${{ matrix.mayhemfile }}
