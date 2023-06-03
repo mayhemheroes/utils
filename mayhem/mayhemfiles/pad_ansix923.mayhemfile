@@ -1,0 +1,7 @@
+project: utils
+target: pad_ansix923
+duration: 90
+
+cmds:
+    - cmd: /pad_ansix923
+

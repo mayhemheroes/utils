@@ -1,0 +1,7 @@
+project: utils
+target: pad_iso10126
+duration: 90
+
+cmds:
+    - cmd: /pad_iso10126
+
